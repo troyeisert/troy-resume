@@ -38,19 +38,7 @@ const Body = () => {
 	return (
 		<div className='bg-zinc-900 p-6 md:p-8 rounded-lg'>
 			<div className='md:flex'>
-				<div className='py-4 px-6 bg-zinc-800 rounded-md'>
-					<h2 className='font-display text-zinc-200 font-bold text-2xl tracking-wider'>
-						My Skills
-					</h2>
-					<div className='space-y-1 text-zinc-300 mt-5 md:block flex flex-wrap'>
-						{skills.map((s, i) => (
-							<div key={i} className='w-1/2 md:w-full'>
-								{s}
-							</div>
-						))}
-					</div>
-				</div>
-				<div className='md:ml-12 pt-4 flex-grow'>
+				<div className='md:order-2 md:ml-12 pt-4 flex-grow'>
 					<h2 className='font-display text-zinc-200 font-bold text-2xl tracking-wider'>
 						Employment History
 					</h2>
@@ -58,7 +46,7 @@ const Body = () => {
 						<div
 							key={i}
 							className={clsx(
-								i + 1 != employment.length && "border-b border-zinc-300 border-opacity-20 pb-4",
+								i + 1 != employment.length && "border-b border-zinc-300 border-opacity-20 pb-5",
 								"my-5 md:flex"
 							)}>
 							<div className='md:w-3/4'>
@@ -79,6 +67,18 @@ const Body = () => {
 							</div>
 						</div>
 					))}
+				</div>
+				<div className='md:order-1 py-4 px-6 bg-zinc-800 rounded-md'>
+					<h2 className='font-display text-zinc-200 font-bold text-2xl tracking-wider'>
+						My Skills
+					</h2>
+					<div className='space-y-1 text-zinc-300 mt-5 md:block flex flex-wrap'>
+						{skills.map((s, i) => (
+							<div key={i} className='w-1/2 md:w-full'>
+								{s}
+							</div>
+						))}
+					</div>
 				</div>
 			</div>
 		</div>
