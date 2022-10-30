@@ -43,8 +43,10 @@ const Body = () => {
 						My Skills
 					</h2>
 					<div className='space-y-1 text-zinc-300 mt-5 md:block flex flex-wrap'>
-						{skills.map((s) => (
-							<div className='w-1/2 md:w-full'>{s}</div>
+						{skills.map((s, i) => (
+							<div key={i} className='w-1/2 md:w-full'>
+								{s}
+							</div>
 						))}
 					</div>
 				</div>
@@ -54,6 +56,7 @@ const Body = () => {
 					</h2>
 					{employment.map((e, i) => (
 						<div
+							key={i}
 							className={clsx(
 								i + 1 != employment.length && "border-b border-zinc-300 border-opacity-20 pb-4",
 								"my-5 md:flex"

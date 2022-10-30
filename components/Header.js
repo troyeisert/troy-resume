@@ -9,6 +9,7 @@ const Header = () => {
 					width='150'
 					height='150'
 					className='w-[150px] h-[150px] rounded-full'
+					alt='Troy Eisert'
 				/>
 				<div className='text-white mt-4 md:mt-0 md:ml-12'>
 					<h1 className='text-4xl font-bold tracking-tight font-display'>Troy Eisert</h1>
@@ -16,6 +17,7 @@ const Header = () => {
 					<a
 						href='/Troy_Eisert-Full_Stack_Web_Developer.pdf'
 						target='_blank'
+						rel='noreferrer'
 						className='mt-5 text-sm tracking-wider font-semibold p-3 bg-zinc-700 inline-flex space-x-2 rounded-md hover:bg-blue-500'>
 						<span>Download CV</span>
 						<svg
@@ -38,7 +40,7 @@ const Header = () => {
 						<a
 							href='https://www.linkedin.com/in/troy-eisert/'
 							target='_blank'
-							rel='noopener nofollow'
+							rel='noreferrer nofollow'
 							className='fill-zinc-200 hover:fill-blue-400'>
 							<svg
 								role='img'
@@ -52,7 +54,7 @@ const Header = () => {
 						<a
 							href='https://github.com/troyeisert'
 							target='_blank'
-							rel='noopener nofollow'
+							rel='noreferrer nofollow'
 							className='fill-zinc-200 hover:fill-blue-400'>
 							<svg
 								role='img'
@@ -66,7 +68,7 @@ const Header = () => {
 						<a
 							href='https://www.instagram.com/teeroytroy/'
 							target='_blank'
-							rel='noopener nofollow'
+							rel='noreferrer nofollow'
 							className='fill-zinc-200 hover:fill-blue-400'>
 							<svg
 								role='img'
